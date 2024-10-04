@@ -2,7 +2,7 @@ function rollDice() {
 
 
 
-    fetch('https://dice-roller-nodejs-se-eeerhre6ecaqb4gz.centralus-01.azurewebsites.net.azurewebsites.net/d6')  //API reference
+    fetch('https://dice-roller-nodejs-se-eeerhre6ecaqb4gz.centralus-01.azurewebsites.net/d6')  //API reference
         .then(response => response.json())
         .then(data => {
             
