@@ -1,8 +1,14 @@
+
+const dropdownSelection = document.getElementById("selectServer");
+
+
 function rollDice() {
 
 
 
-    fetch('https://dice-roller-nodejs-se-eeerhre6ecaqb4gz.centralus-01.azurewebsites.net/d6')  //API reference
+    const selectedAPI = dropdownSelection.value;
+
+    fetch(selectedAPI)  //API reference
         .then(response => response.json())
         .then(data => {
             
